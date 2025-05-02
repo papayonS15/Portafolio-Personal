@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio | Frontend Developer</title>
+  <script defer src="script.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+</head>
+<body class="bg-white text-black transition duration-300" id="body">
+  <!-- Navbar -->
+  <header class="flex items-center justify-between p-4 border-b">
+    <h1 class="text-xl font-bold">Tu Nombre</h1>
+    <nav class="hidden md:flex gap-4">
+      <a href="#inicio" class="hover:underline">Inicio</a>
+      <a href="#proyectos" class="hover:underline">Proyectos</a>
+      <a href="#contacto" class="hover:underline">Contacto</a>
+    </nav>
+    <button id="toggleTheme" class="ml-4 px-2 py-1 border rounded">Cambiar Tema</button>
+    <div class="md:hidden">
+      <button id="menu-toggle">☰</button>
+    </div>
+  </header>
+  <nav id="mobile-menu" class="hidden md:hidden flex-col gap-2 p-4 border-b">
+    <a href="#inicio">Inicio</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <!-- Sección: Inicio -->
+  <section id="inicio" class="p-6 text-center">
+    <h2 class="text-3xl font-bold mb-2">Frontend Developer</h2>
+    <p class="text-gray-600">HTML only with proper layout, no styling</p>
+  </section>
+
+  <!-- Sección: Proyectos -->
+  <section id="proyectos" class="p-6 grid md:grid-cols-3 gap-6">
+    <!-- Proyectos -->
+    <div>
+      <h3 class="text-lg font-bold mb-2">Proyectos</h3>
+      <ul class="list-disc pl-4">
+        <li>HTML Only Portfolio</li>
+        <li>Calculator</li>
+        <li>Quiz App</li>
+        <li>Countdown Timer</li>
+        <li>Product Upcoming Page</li>
+      </ul>
+    </div>
+
+    <!-- Experiencia -->
+    <div>
+      <h3 class="text-lg font-bold mb-2">Experiencia Laboral</h3>
+      <p><strong>roadmap.sh</strong><br>Resolví todos los proyectos frontend<br><a href="#">Visita mi perfil</a></p>
+      <p class="mt-4"><strong>OpenSource</strong><br>Contribuí a 50 proyectos con más de 200 stars.<br><a href="#">Visita mi perfil</a></p>
+    </div>
+
+    <!-- Educación -->
+    <div>
+      <h3 class="text-lg font-bold mb-2">Educación</h3>
+      <p>Graduado con 3.76 de 4.0. Ganador de hackathon. Organizé 30 sesiones.</p>
+      <ul class="list-disc pl-4 mt-2 text-sm">
+        <li>Programación orientada a objetos</li>
+        <li>Estructuras de Datos y Algoritmos</li>
+        <li>Ingeniería Web</li>
+        <li>Inteligencia Artificial</li>
+        <li>Interacción Humano-Computador</li>
+        <li>Gráficos por Computador</li>
+        <li>Sistemas de Bases de Datos</li>
+        <li>Sistemas Distribuidos</li>
+        <li>Matemáticas Discretas</li>
+      </ul>
+    </div>
+
+    <!-- Reseñas -->
+    <div class="md:col-span-3 mt-8">
+      <h3 class="text-lg font-bold mb-4">Reseñas de Profesores</h3>
+      <div class="grid md:grid-cols-3 gap-4">
+        <div class="border p-4 rounded">"Brillante estudiante, se destacó siempre." <br><small>Jane Doe, Profesora Asistente</small></div>
+        <div class="border p-4 rounded">"Brillante estudiante, se destacó siempre." <br><small>Jane Doe, Profesora Asistente</small></div>
+        <div class="border p-4 rounded">"Brillante estudiante, se destacó siempre." <br><small>Jane Doe, Profesora Asistente</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección: Contacto -->
+  <section id="contacto" class="p-6 max-w-xl mx-auto">
+    <h2 class="text-2xl font-bold mb-4">Contáctame</h2>
+    <form action="https://formspree.io/f/tu_codigo_aqui" method="POST" class="grid gap-4">
+      <input type="text" name="nombre" placeholder="Tu nombre" required class="p-2 border rounded" />
+      <input type="email" name="email" placeholder="Tu correo" required class="p-2 border rounded" />
+      <textarea name="mensaje" placeholder="Tu mensaje" required class="p-2 border rounded"></textarea>
+      <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Enviar</button>
+    </form>
+  </section>
+
+  <footer class="text-center p-4 mt-8 border-t">&copy; Todos los derechos reservados 2025</footer>
+</body>
+</html>
